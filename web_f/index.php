@@ -35,8 +35,8 @@ $resolver = new HttpKernel\Controller\ControllerResolver();
 
 
 $dispatcher = new EventDispatcher();
-$dispatcher->addSubscriber(new HttpKernel\EventListener\RouterListener($matcher));
-$dispatcher->addListener('response', array(new Simplex\ContentLengthListener(), 'onResponse'), -255);
+$dispatcher->addSubscriber(new HttpKernel\EventListener\RouterListener($matcher));#事件的订阅#9
+$dispatcher->addListener('response', array(new Simplex\ContentLengthListener(), 'onResponse'), -255);#时间的监听#9 低优先级的监听控件设置优先级为负数  -255，表示最后执行
 $dispatcher->addSubscriber(new Simplex\GoogleListener());
 $dispatcher->addListener('responseT', function (Simplex\ResponseEvent $event) {
     $response = $event->getResponse();

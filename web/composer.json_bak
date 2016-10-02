@@ -8,8 +8,12 @@
     "symfony/event-dispatcher": "2.1.*"
   },
   "autoload": {
-    "classmap": [
-      "src"
-    ]
+    "psr-0": {
+      "Simplex": "src/",
+      "Calendar": "src/",
+      "File": "src/",
+      "Mysqli": "src/",
+      "Preg": "src/"
+    }
   }
 }
