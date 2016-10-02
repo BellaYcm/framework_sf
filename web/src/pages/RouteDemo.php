@@ -8,7 +8,7 @@
 
 use Symfony\Component\Routing;
 
-$routes = include __DIR__.'/../app.php';
+$routes = include __DIR__.'/../routes.php';
 
 $context = new Routing\RequestContext();
 

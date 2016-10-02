@@ -35,6 +35,7 @@ class BenchMarksController
 
     public function oopAction()
     {
+        //比较面向过程，面向对象的速度
         //函数在使用俩个参数比三个参数快11%
         require "ubm.php";
         $loops = 10000000;

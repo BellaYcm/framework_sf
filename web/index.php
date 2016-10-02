@@ -30,7 +30,7 @@ use Symfony\Component\HttpKernel\HttpCache\Store;
 
 
 $request = Request::createFromGlobals();
-$routes = include __DIR__.'/src/app.php';
+$routes = include __DIR__.'/src/routes.php';
 
 $context = new Routing\RequestContext();
 $context->fromRequest($request);
