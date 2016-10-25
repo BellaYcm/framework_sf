@@ -6,9 +6,16 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Api\\Controller\\ApiController' => $baseDir . '/src/Api/Controller/ApiController.php',
+    'BenchMarks\\Controller\\Adder' => $baseDir . '/src/BenchMarks/Controller/BenchMarksController.php',
+    'BenchMarks\\Controller\\BenchMarksController' => $baseDir . '/src/BenchMarks/Controller/BenchMarksController.php',
+    'Calendar\\Controller\\LeapYearController' => $baseDir . '/src/Calendar/Controller/LeapYearController.php',
+    'Calendar\\Model\\LeapYear' => $baseDir . '/src/Calendar/Model/LeapYear.php',
+    'File\\Controller\\FileController' => $baseDir . '/src/File/Controller/FileController.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',
     'File_Iterator_Factory' => $vendorDir . '/phpunit/php-file-iterator/src/Factory.php',
+    'Mysqli\\Controller\\MysqliController' => $baseDir . '/src/Mysqli/Controller/MysqliController.php',
     'PHPUnit\\Framework\\TestCase' => $vendorDir . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',
     'PHPUnit_Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',
     'PHPUnit_Extensions_GroupTestSuite' => $vendorDir . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
@@ -379,6 +386,7 @@ return array(
     'PHP_Token_XOR_EQUAL' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD_FROM' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
+    'Preg\\Controller\\PregController' => $baseDir . '/src/Preg/Controller/PregController.php',
     'SebastianBergmann\\CodeCoverage\\CodeCoverage' => $vendorDir . '/phpunit/php-code-coverage/src/CodeCoverage.php',
     'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => $vendorDir . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
     'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => $vendorDir . '/phpunit/php-code-coverage/src/Driver/Driver.php',
@@ -458,5 +466,10 @@ return array(
     'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => $vendorDir . '/sebastian/recursion-context/src/InvalidArgumentException.php',
     'SebastianBergmann\\ResourceOperations\\ResourceOperations' => $vendorDir . '/sebastian/resource-operations/src/ResourceOperations.php',
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
+    'Simplex\\ContentLengthListener' => $baseDir . '/src/Simplex/ContentLengthListener.php',
+    'Simplex\\Framework' => $baseDir . '/src/Simplex/Framework.php',
+    'Simplex\\GoogleListener' => $baseDir . '/src/Simplex/GoogleListener.php',
+    'Simplex\\Money' => $baseDir . '/src/Simplex/Money.php',
+    'Simplex\\ResponseEvent' => $baseDir . '/src/Simplex/ResponseEvent.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
 );

@@ -9,6 +9,15 @@ use Symfony\Component\Routing;
 use Symfony\Component\HttpFoundation\Response;
 
 $routes = new Routing\RouteCollection();
+//每一条路由规则都由一个名字（hello）以及一个Route实例来定义，
+//而一条路由实例又由一条路由规则（/hello/{name})以及默认值数组（array('name' => 'World')）来定义。
+$routes->add('api', new Routing\Route('/api', array(
+    '_controller' => 'Api\\Controller\\ApiController::indexAction',
+)));
+
+$routes->add('session', new Routing\Route('/session', array(
+    '_controller' => 'Api\\Controller\\ApiController::sessionAction',
+)));
 
 $routes->add('file', new Routing\Route('/file', array(
     '_controller' => 'File\\Controller\\FileController::indexAction',
@@ -85,5 +94,14 @@ function is_leap_year($year = null)
 
     return 0 == $year % 400 || (0 == $year % 4 && 0 != $year % 100);
 }
+function render_template($request)
+{
+    extract($request->attributes->all(), EXTR_SKIP);
+    ob_start();
+    include sprintf(__DIR__.'/../src/pages/%s.php', $_route);
+
+    return new Response(ob_get_clean());
+}
+
 
 return $routes;

@@ -48,7 +48,9 @@ class Framework extends HttpKernel
     ) {
         try {
             $request->attributes->add($this->matcher->match($request->getPathInfo()));
-            $controller = $this->resolver->getController($request);
+            //resolver 根据路由转换类和方法的对应关系
+            $controller = $this->resolver->getController($request);//[  0 =>object(Api\Controller\ApiController)[49] 1 => string 'indexAction' (length=11)]
+            //getArguments()方法将使用PHP的反射来决定什么样的参数才需要传给控制器
             $arguments = $this->resolver->getArguments($request, $controller);
             $response = call_user_func_array($controller, $arguments);
         } catch (ResourceNotFoundException $e) {

@@ -11,9 +11,6 @@ return array(
     'Symfony\\Component\\HttpFoundation' => array($vendorDir . '/symfony/http-foundation'),
     'Symfony\\Component\\EventDispatcher' => array($vendorDir . '/symfony/event-dispatcher'),
     'Symfony\\Component\\ClassLoader' => array($vendorDir . '/symfony/class-loader'),
-    'Simplex' => array($baseDir . '/src'),
     'SessionHandlerInterface' => array($vendorDir . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs'),
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
-    'File' => array($baseDir . '/src'),
-    'Calendar' => array($baseDir . '/src'),
 );

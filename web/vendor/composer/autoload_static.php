@@ -74,10 +74,6 @@ class ComposerStaticInitfbf9ede6dbcd5d67a9b58afe7de66f43
             array (
                 0 => __DIR__ . '/..' . '/symfony/class-loader',
             ),
-            'Simplex' => 
-            array (
-                0 => __DIR__ . '/../..' . '/src',
-            ),
             'SessionHandlerInterface' => 
             array (
                 0 => __DIR__ . '/..' . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs',
@@ -90,26 +86,19 @@ class ComposerStaticInitfbf9ede6dbcd5d67a9b58afe7de66f43
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
             ),
         ),
-        'F' => 
-        array (
-            'File' => 
-            array (
-                0 => __DIR__ . '/../..' . '/src',
-            ),
-        ),
-        'C' => 
-        array (
-            'Calendar' => 
-            array (
-                0 => __DIR__ . '/../..' . '/src',
-            ),
-        ),
     );
 
     public static $classMap = array (
+        'Api\\Controller\\ApiController' => __DIR__ . '/../..' . '/src/Api/Controller/ApiController.php',
+        'BenchMarks\\Controller\\Adder' => __DIR__ . '/../..' . '/src/BenchMarks/Controller/BenchMarksController.php',
+        'BenchMarks\\Controller\\BenchMarksController' => __DIR__ . '/../..' . '/src/BenchMarks/Controller/BenchMarksController.php',
+        'Calendar\\Controller\\LeapYearController' => __DIR__ . '/../..' . '/src/Calendar/Controller/LeapYearController.php',
+        'Calendar\\Model\\LeapYear' => __DIR__ . '/../..' . '/src/Calendar/Model/LeapYear.php',
+        'File\\Controller\\FileController' => __DIR__ . '/../..' . '/src/File/Controller/FileController.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
+        'Mysqli\\Controller\\MysqliController' => __DIR__ . '/../..' . '/src/Mysqli/Controller/MysqliController.php',
         'PHPUnit\\Framework\\TestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',
         'PHPUnit_Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit_Extensions_GroupTestSuite' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
@@ -480,6 +469,7 @@ class ComposerStaticInitfbf9ede6dbcd5d67a9b58afe7de66f43
         'PHP_Token_XOR_EQUAL' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_YIELD' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_YIELD_FROM' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
+        'Preg\\Controller\\PregController' => __DIR__ . '/../..' . '/src/Preg/Controller/PregController.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',
@@ -559,6 +549,11 @@ class ComposerStaticInitfbf9ede6dbcd5d67a9b58afe7de66f43
         'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => __DIR__ . '/..' . '/sebastian/recursion-context/src/InvalidArgumentException.php',
         'SebastianBergmann\\ResourceOperations\\ResourceOperations' => __DIR__ . '/..' . '/sebastian/resource-operations/src/ResourceOperations.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Simplex\\ContentLengthListener' => __DIR__ . '/../..' . '/src/Simplex/ContentLengthListener.php',
+        'Simplex\\Framework' => __DIR__ . '/../..' . '/src/Simplex/Framework.php',
+        'Simplex\\GoogleListener' => __DIR__ . '/../..' . '/src/Simplex/GoogleListener.php',
+        'Simplex\\Money' => __DIR__ . '/../..' . '/src/Simplex/Money.php',
+        'Simplex\\ResponseEvent' => __DIR__ . '/../..' . '/src/Simplex/ResponseEvent.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
     );
 
